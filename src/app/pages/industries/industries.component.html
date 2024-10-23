@@ -1,0 +1,8 @@
+<div class="container mt-5"> <!-- Adds space between navbar and cards -->
+  <div class="row">
+    <!-- Loop through the cards array and display each card -->
+    <div class="col-md-4 mb-3" *ngFor="let card of cards; let i = index">
+      <app-card [image]="card.image" [description]="card.description"></app-card>
+    </div>
+  </div>
+</div>

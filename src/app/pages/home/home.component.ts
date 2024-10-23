@@ -9,14 +9,5 @@ import { ApiService } from '../../api.service';
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  constructor(private api:ApiService){}
-  products:any=""
- ngOnInit(){
-    this.api.getData().subscribe((data:any)=>{this.products=data
-
-console.log(this.products);
-
-
-    })
-  }
+ 
 }

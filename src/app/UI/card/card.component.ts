@@ -1,0 +1,11 @@
+import { Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-card',
+  templateUrl: './card.component.html',
+  styleUrls: ['./card.component.scss']
+})
+export class CardComponent {
+  @Input() image!: string;       // Receive image from parent component
+  @Input() description!: string; // Receive description from parent component
+}

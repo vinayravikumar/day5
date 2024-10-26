@@ -1,1 +1,15 @@
-<p>industries works!</p>
+<div class="card-container">
+  @for(item of products; track item.id){
+    <div class="col">
+      <div class="card">
+        <img src="{{item.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">{{item.title}}</h5>
+          <p class="card-text">{{item.description}}</p>
+          <a routerLink="/industry-detail/{{item.id}}" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  }
+</div>
+

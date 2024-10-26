@@ -1,0 +1,42 @@
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; // Ensures spacing between cards
+  margin: 20px; // Adds space between the card container and the screen border
+  gap: 16px; // Space between cards
+
+  .col {
+    flex: 0 0 calc(33.33% - 16px); // 3 cards per row, accounting for gaps
+    box-sizing: border-box;
+
+    @media (max-width: 768px) {
+      flex: 0 0 calc(50% - 16px); // 2 cards per row on smaller screens
+    }
+
+    @media (max-width: 576px) {
+      flex: 0 0 100%; // 1 card per row on extra small screens
+    }
+  }
+
+  .card {
+    width: 100%; // Make the card full width of its container
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; // Ensures no overflow from card corners
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Optional: adds a subtle shadow to the card
+  }
+
+  .card-img-top {
+    width: 100%; // Ensure image fits the card
+    height: auto; // Maintain aspect ratio
+  }
+
+  .card-body {
+    padding: 16px; // Padding inside card body
+  }
+}
+
+// Adjust spacing for the navbar if necessary
+.navbar {
+  margin-bottom: 20px; // Space between navbar and cards
+}

@@ -4,8 +4,7 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { IndustriesComponent } from './pages/industries/industries.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AboutComponent } from './pages/about/about.component';
-import { IndustryDetailComponent } from './pages/industry-detail/industry-detail.component';
-import { NgModule } from '@angular/core';
+import { BankingComponent } from './pages/banking/banking.component';
 
 
 export const routes: Routes = [
@@ -25,11 +24,7 @@ export const routes: Routes = [
         path: '**', component:NotfoundComponent
     },
     {
-      path: 'industry-detail/:id', component:IndustryDetailComponent
-    },
+      path: 'industries/:name', component:BankingComponent
+    }
 ];
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule],
-})
-export class AppRoutingModule {}
+

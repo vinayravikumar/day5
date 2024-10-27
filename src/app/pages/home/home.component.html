@@ -1,28 +1,28 @@
-<form>
-  <input type="radio" name="fancy" autofocus value="clubs" id="clubs" />
-  <input type="radio" name="fancy" value="hearts" id="hearts" />
-  <input type="radio" name="fancy" value="spades" id="spades" />
-  <input type="radio" name="fancy" value="diamonds" id="diamonds" />
+<div class="home-container">
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Nest Digital</h1>
+      <p>Your partner in digital transformation, providing innovative solutions to accelerate your growth.</p>
+      <button class="cta-button">Learn More</button>
+    </div>
+  </section>
 
-  <label for="clubs">&#9827; Clubs</label>
-  <label for="hearts">&#9829; Hearts</label>
-  <label for="spades">&#9824; Spades</label>
-  <label for="diamonds">&#9830; Diamonds</label>
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <h3>Consulting</h3>
+        <p>Expert advice to drive your business forward.</p>
+      </div>
+      <div class="card">
+        <h3>Technology</h3>
+        <p>Advanced tech solutions for seamless operations.</p>
+      </div>
+      <div class="card">
+        <h3>Outsourcing</h3>
+        <p>Professional support to enhance your capabilities.</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="keys">Use left and right keys to navigate</div>
-</form>
-<script>
-  // JavaScript to handle keyboard navigation
-  const inputs = document.querySelectorAll('input[name="fancy"]');
-  let index = 0;
 
-  document.addEventListener('keydown', (event) => {
-      if (event.key === 'ArrowRight') {
-          index = (index + 1) % inputs.length;
-          inputs[index].checked = true;
-      } else if (event.key === 'ArrowLeft') {
-          index = (index - 1 + inputs.length) % inputs.length;
-          inputs[index].checked = true;
-      }
-  });
-</script>

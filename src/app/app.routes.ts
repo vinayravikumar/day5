@@ -15,6 +15,9 @@ export const routes: Routes = [
       path: 'industries', component:IndustriesComponent
     },
     {
+      path: 'industries/:name', component:BankingComponent
+    },
+    {
       path:'contact',component:ContactComponent
     },
     {
@@ -22,9 +25,6 @@ export const routes: Routes = [
     },
     {
         path: '**', component:NotfoundComponent
-    },
-    {
-      path: 'industries/:name', component:BankingComponent
     }
 ];
 
